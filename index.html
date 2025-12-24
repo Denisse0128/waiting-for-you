@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For my wawita Robert 🤍</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Quicksand', sans-serif;
+  color:#5a4a4a;
+  text-align:center;
+  overflow-x:hidden;
+
+  background-image:url("https://i.pinimg.com/736x/65/7c/8c/657c8cad14e715fa6138e075ff432407.jpg");
+  background-repeat:repeat;
+  background-size:300px;
+}
+
+/* Pastel overlay */
+.overlay{
+  background:rgba(255,240,245,0.88);
+  min-height:100vh;
+  padding-bottom:40px;
+}
+
+/* Floating hearts */
+.heart{
+  position:fixed;
+  bottom:-20px;
+  font-size:22px;
+  animation:floatUp 8s linear infinite;
+  opacity:.85;
+}
+@keyframes floatUp{
+  from{transform:translateY(0)}
+  to{transform:translateY(-110vh)}
+}
+
+header{
+  padding:40px 20px;
+}
+h1{
+  font-size:2.6em;
+  font-weight:700;
+  color:#b86b77;
+}
+p{
+  font-size:1.15em;
+}
+
+.cat-img{
+  width:220px;
+  border-radius:25px;
+  box-shadow:0 8px 16px rgba(0,0,0,.2);
+  margin:20px auto;
+}
+
+.box{
+  background:#fff7f9;
+  padding:34px;
+  border-radius:32px;
+  margin:38px auto;
+  max-width:900px;
+  box-shadow:0 12px 24px rgba(0,0,0,.12);
+}
+
+/* Gifts */
+.gifts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:25px;
+}
+.gift{
+  background:#fff;
+  border-radius:22px;
+  padding:18px;
+  box-shadow:0 8px 16px rgba(0,0,0,.12);
+}
+.gift img{
+  width:100%;
+  border-radius:18px;
+}
+.gift a{
+  display:block;
+  margin-top:12px;
+  text-decoration:none;
+  font-weight:600;
+  color:#d16c7c;
+}
+
+button{
+  background:#f7b7c2;
+  border:none;
+  padding:16px 32px;
+  font-size:1.1em;
+  font-weight:600;
+  border-radius:35px;
+  cursor:pointer;
+  margin-top:18px;
+  color:#5a2d33;
+}
+button:hover{
+  background:#ffd6de;
+}
+
+#countdown{
+  font-size:1.7em;
+  margin-top:20px;
+  color:#8b4b55;
+  font-weight:600;
+}
+
+#finalMessage{
+  display:none;
+  font-size:1.7em;
+  margin-top:25px;
+  color:#8b4b55;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<header>
+  <h1>🎄 Merry Christmas, my wawita Robert 🎄</h1>
+  <p>This page was made only for you, with all my love 🤍</p>
+</header>
+
+<img class="cat-img"
+src="https://img.freepik.com/vector-premium/gato-blanco-gato-negro-son-lindos-hay-amor-romantico-corazon-rosa-vector-ilustracion-dibujos-animados-estilo-plano_610956-772.jpg"
+alt="Cute black and white cats">
+
+<div class="box">
+  <h2>🎵 Our Song</h2>
+  <p>Press play and feel my heart.</p>
+
+  <audio controls>
+    <source src="always-forever.mp3.mp3" type="audio/mpeg">
+    Your browser does not support the audio.
+  </audio>
+</div>
+
+<div class="box">
+  <h2>🎁 Gifts I Bought for You</h2>
+  <p>Each one was chosen thinking of you 🤍</p>
+
+  <div class="gifts">
+    <div class="gift">
+      <img src="https://img.kwcdn.com/product/open/2024-03-06/1709707378176-212c52e44bef45df8c2d1fc802043858-goods.jpeg">
+      <a href="https://www.temu.com/pe/mousepad--con--de-gato--y-negro-con--de-sol-y-luna-que-mide-7-87x7-87-pulgadas-ideal-para-escritorios-de-computadora--una-base-de-goma-antideslizante-y-bordes-cosidos-lo-que-lo-convierte-en-un-regalo-de-cumpleanos--para-un-novio-o-novia-g-601099550168572.html" target="_blank">
+        🐱 Cat Mouse Pad
+      </a>
+    </div>
+
+    <div class="gift">
+      <img src="https://img.kwcdn.com/product/fancy/0f611a3a-7fb4-404c-90e8-d493108fa5ff.jpg">
+      <a href="https://www.temu.com/pe/1pc-protector-de-cinturon-para-asiento-del-auto---y-confortable--de-pequena-pez-ideal-como-accesorio-o-regalo-g-601103106507207.html" target="_blank">
+        🚗 Seat Belt Cover
+      </a>
+    </div>
+  </div>
+
+  <p style="margin-top:30px;font-weight:600;">
+    And there is one more special gift waiting for you here 🤍
+  </p>
+</div>
+
+<div class="box">
+  <h2>⏳ Waiting for you to arrive</h2>
+  <div id="countdown"></div>
+
+  <button onclick="showFinal()">Open the final message 💌</button>
+
+  <div id="finalMessage">
+    💖 TE AMO MI AMOR 💖<br><br>
+    Thank you for appearing in my life.<br>
+    You are everything to me 🤍
+  </div>
+</div>
+
+<footer style="margin:35px;font-size:1em;color:#9b5c66;">
+  Made with all my love for Robert 🐱🤍🖤
+</footer>
+
+</div>
+
+<script>
+// REAL countdown from Dec 24 to Jan 27
+const targetDate = new Date("January 27, 2026 00:00:00").getTime();
+
+function updateCountdown(){
+  const now = new Date().getTime();
+  const distance = targetDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML =
+    `${days} days 💕 ${hours} hours ✨ ${minutes} minutes 💫 ${seconds} seconds`;
+
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+function showFinal(){
+  document.getElementById("finalMessage").style.display="block";
+}
+
+// Floating hearts
+setInterval(()=>{
+  const h=document.createElement("div");
+  h.className="heart";
+  h.style.left=Math.random()*100+"vw";
+  h.innerHTML="💗";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),8000);
+},600);
+</script>
+
+</body>
+</html>
